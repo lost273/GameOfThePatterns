@@ -1,0 +1,7 @@
+D:\prog\VSProj\GIT\GameOfThePatterns\GameOfThePatterns\bin\Debug\GameOfThePatterns.exe.config
+D:\prog\VSProj\GIT\GameOfThePatterns\GameOfThePatterns\bin\Debug\GameOfThePatterns.exe
+D:\prog\VSProj\GIT\GameOfThePatterns\GameOfThePatterns\bin\Debug\GameOfThePatterns.pdb
+D:\prog\VSProj\GIT\GameOfThePatterns\GameOfThePatterns\obj\Debug\GameOfThePatterns.csprojResolveAssemblyReference.cache
+D:\prog\VSProj\GIT\GameOfThePatterns\GameOfThePatterns\obj\Debug\GameOfThePatterns.csproj.CoreCompileInputs.cache
+D:\prog\VSProj\GIT\GameOfThePatterns\GameOfThePatterns\obj\Debug\GameOfThePatterns.exe
+D:\prog\VSProj\GIT\GameOfThePatterns\GameOfThePatterns\obj\Debug\GameOfThePatterns.pdb
