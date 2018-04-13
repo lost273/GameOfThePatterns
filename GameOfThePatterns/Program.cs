@@ -9,6 +9,9 @@ namespace GameOfThePatterns {
                 case "1":
                     LetsEventGame.Start();
                     break;
+                case "2":
+                    LetsDecoratorGame.Start();
+                    break;
             }
             Console.ReadLine();
         }
