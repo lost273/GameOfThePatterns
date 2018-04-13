@@ -1,23 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameOfThePatterns {
     class EventClass {
         public delegate void MethodContainer();
         public event MethodContainer onCount;
         public void EventGame() {
-            for (int i = 0; i < 100; i++) {
-                Console.Write("#");
+            string message;
+            Console.WriteLine("Enter - stop - to activate an event.");
+            while (true) {
+                message = Console.ReadLine();
+                if (message.Equals("stop")) {
+                    onCount();
+                    break;
+                }
+                else {
+                    Console.WriteLine("Event wasn't activate.");
+                }
             }
-            onCount();
+            
         }
     }
     class Handler {
         public void SomeMessage() {
-            Console.WriteLine("Something!");
+            Console.WriteLine("The event was activated!");
         }
     }
     class LetsEventGame {
