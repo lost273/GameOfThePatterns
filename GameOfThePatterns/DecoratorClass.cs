@@ -5,28 +5,34 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GameOfThePatterns {
-    abstract class Component {
-        public abstract void Operation();
+    abstract class Printer {
+        public Printer(string n) {
+            this.Name = n;
+        }
+        public string Name { get; protected set; }
     }
-    class ConcreteComponent : Component {
-        public override void Operation() {
-            
+    class LaserPrinter : Printer {
+        public LaserPrinter() : base("Laser printer"){
+
         }
     }
-    abstract class DecoratorClass : Component{
-        protected Component component;
-        public void SetComponent(Component component) {
-            this.component = component;
+    class InkPrinter : Printer {
+        public InkPrinter() : base("Ink printer"){
+
         }
-        public override void Operation() {
-            if (component != null) component.Operation();
+    }
+    abstract class PrinterDecorator : Printer{
+        protected Printer printer;
+        public PrinterDecorator(string n, Printer p) : base(n) {
+            printer = p;
         }
+        
     }
     //additional functionality
-    class ConcreteDecorator : DecoratorClass {
-        public override void Operation() {
-            base.Operation();
+    class ColorPrint : PrinterDecorator {
+        public ColorPrint(Printer p) : base(p.Name + ", with color printing",p){
         }
+
     }
     class LetsDecoratorGame {
         public static void Start() {
