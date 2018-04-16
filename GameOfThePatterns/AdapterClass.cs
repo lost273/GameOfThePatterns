@@ -8,7 +8,7 @@ namespace GameOfThePatterns {
     }
     class Target {
         public virtual void Request() {
-
+            Console.WriteLine("Hello from original target!");
         }
     }
     class AdapterClass : Target {
@@ -19,7 +19,17 @@ namespace GameOfThePatterns {
     }
     class Adaptee {
         public void SpecificRequest() {
+            Console.WriteLine("Hello from adaptee!");
+        }
+    }
+    class LetsAdapterGame {
+        public static void Start() {
+            Client client = new Client();
+            Target target = new Target();
+            client.Request(target);
 
+            AdapterClass adapterClass = new AdapterClass();
+            client.Request(adapterClass);
         }
     }
 }
