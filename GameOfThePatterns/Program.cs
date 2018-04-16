@@ -13,6 +13,9 @@ namespace GameOfThePatterns {
                 case "2":
                     LetsDecoratorGame.Start();
                     break;
+                case "3":
+                    LetsAdapterGame.Start();
+                    break;
             }
             Console.ReadLine();
         }

@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterClass.cs" />
     <Compile Include="DecoratorClass.cs" />
     <Compile Include="EventClass.cs" />
     <Compile Include="Program.cs" />

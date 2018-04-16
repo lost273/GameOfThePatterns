@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GameOfThePatterns {
     abstract class Printer {
@@ -32,10 +28,12 @@ namespace GameOfThePatterns {
         public ColorPrint(Printer p) : base(p.Name + ", with color printing",p){
         }
     }
+    //additional functionality
     class MonoPrint : PrinterDecorator {
         public MonoPrint(Printer p) : base(p.Name + ", with mono printing", p) {
         }
     }
+    //additional functionality
     class BorderlessPrint : PrinterDecorator {
         public BorderlessPrint(Printer p) : base(p.Name + ", with borderless printing", p) {
         }
